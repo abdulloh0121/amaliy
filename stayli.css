@@ -1,0 +1,36 @@
+.card_box {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 45px;
+}
+.ul_text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  gap: 40px;
+}
+.text_href {
+  display: flex;
+  text-decoration: none;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 23px;
+  color: #888888;
+  transition: 0;
+  
+}
+.text_href:hover {
+  color: #e21a43;
+}
+.text_href:hover:before {
+  content: "+";
+}
