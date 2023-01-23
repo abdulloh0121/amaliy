@@ -1,5 +1,11 @@
-.card_box {
-  max-width: 1200px;
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300;600&family=Noto+Sans:wght@500&family=Rubik:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contaner {
+  max-width: 1250px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -7,30 +13,303 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 45px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
-.ul_text {
+.form {
+  position: relative;
+}
+.input_search {
+  width: 650px;
+  padding: 16px 47px;
+  background: #f8fafd;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  font-size: 13px;
+  border: none;
+  outline: none;
+}
+.loga_search {
+  position: absolute;
+  margin-top: 16px;
+  margin-left: 17px;
+}
+.logout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.logout_button {
+  background: #0d75ff;
+  border-radius: 4px;
+  padding: 11px 23px;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.logout_button:hover {
+  color: #0d75ff;
+  background-color: #a6b0c3;
+}
+.border {
+  border-bottom: 2px solid #f8fafd;
+}
+.showing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 350px;
+}
+.showing_text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: #222531;
+}
+.input_month {
+  background: #a6b0c3;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  padding: 16px 15px;
+  color: #ffffff;
+  font-size: 14px;
+}
+.header {
+  display: flex;
+}
+.bookmarks {
+  max-width: 270px;
+  padding: 25px;
+  background: #ffffff;
+}
+
+.bokmarks_text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #000000;
+  margin-bottom: 6px;
+}
+.bokmarks_text_p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 155.6%;
+  /* or 22px */
+  margin-bottom: 25px;
+  color: #000000;
+}
+.book_shop {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  list-style: none;
-  gap: 40px;
+  margin-bottom: 15px;
+  width: 218px;
+  height: 78px;
+  padding: 15px 10px;
+  background: #f8fafd;
+  border-radius: 4px;
 }
-.text_href {
+.book_box {
+  width: 100%;
   display: flex;
-  text-decoration: none;
-  font-family: "Jost";
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 33px;
+}
+.book_itim {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  gap: 33px;
+}
+.book_cart {
+  width: 282px;
+  padding: 15px 13px;
+  background: #ffffff;
+}
+.new_cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 300px;
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+.book_img {
+  width: 249px;
+  background: #f8fafd;
+  border-radius: 5px;
+  padding: 18px 25px;
+  margin-bottom: 19px;
+}
+.python_strong {
+  font-family: "Rubik";
   font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 23px;
-  color: #888888;
-  transition: 0;
-  
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #000000;
 }
-.text_href:hover {
-  color: #e21a43;
+.python_p {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height */
+
+  color: #757881;
 }
-.text_href:hover:before {
-  content: "+";
+.python_p2 {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height */
+
+  color: #757881;
+  margin-bottom: 10px;
+}
+.python_button {
+  background: #ffd80d;
+  border-radius: 4px;
+  padding: 10px 25px;
+  font-size: 14px;
+  color: #000000;
+  border: none;
+  transition: 0.3s;
+}
+.python_button:hover {
+  background: rgba(13, 117, 255, 0.05);
+  color: #0d75ff;
+}
+.python_button2 {
+  background: rgba(13, 117, 255, 0.05);
+  border-radius: 4px;
+  padding: 10px 25px;
+  font-size: 14px;
+  color: #0d75ff;
+  border: none;
+  transition: 0.3s;
+}
+.python_button2:hover {
+  background: #ffd80d;
+  color: #000000;
+}
+.button_read {
+  width: 100%;
+  background: #75828a;
+  padding: 10px 105px;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  transition: 0.3s;
+}
+.button_read:hover {
+  opacity: 0.5;
+}
+
+.swiper {
+  width: 98%;
+  height: 450px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+}
+.swiper-slide {
+  width: 98%;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  text-align: center;
+}
+.post_img {
+  width: 100%;
+  height: 470px;
+  border-radius: 12px;
+}
+.pothtion {
+  position: absolute;
+  z-index: -1;
+}
+.book_modall {
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 550px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all 0.5s ease;
+  transform: translateX(300%);
+  background: #ffffff;
+}
+.book_nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #f8fafd;
+  width: 100%;
+  height: 77px;
+  margin-bottom: 44px;
+}
+.modal_imgBook {
+  background: url(content.jpg), #c4c4c4;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+.modal_textPP {
+  width: 477px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 170.3%;
+  margin-bottom: 33px;
+  /* or 22px */
+
+  color: #58667e;
+}
+.nami_bookpp {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #222531;
+}
+.name_bookbutton {
+  background: rgba(13, 117, 255, 0.09);
+border-radius: 30px;
+font-family: 'Rubik';
+color: #0D75FF;
+font-size: 14px;
+border: none;
+padding: 2px;
+margin-bottom: 15px;
 }

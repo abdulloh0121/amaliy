@@ -4,22 +4,167 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="stayli.css" />
-    <title>sob ready</title>
+    <title>Document</title>
   </head>
-  <body>
-    <div class="card_box">
-      <nav class="nav_box">
-        <img src="imgs/SOB READY.svg" alt="loga" />
-        <ul class="ul_text">
-          <a class="text_href" href=""><li>Home</li></a>
-          <a class="text_href" href=""><li>Category</li></a>
-          <a class="text_href" href=""><li>Shop</li></a>
-          <a class="text_href" href=""><li>Blog</li></a>
-          <a class="text_href" href=""><li>Page</li></a>
-        </ul>
-      </nav>
-      <header class=""></header>
+<!-- modall qismi -->
+  
+  <div class="book_modall">
+    <div class="book_nav">
+      <strong style="font-size: 40px;"></strong>
+      <a href=""> <img class="img_iconx" src="imgs/Vector.png" alt="none"></a>
     </div>
+
+    <img width="288" height="299" class="modal_imgBook" src="imgs/Rectangle 419.png" alt="">
+<div>
+    <div>
+      <p style="font-size: 33px;" class="modal_textPP"></p>
+    </div>
+    <div style="display: flex; gap: 8px;">
+      <p class="nami_bookpp">Author : </p><button class="name_bookbutton">Jamal Kasper</button><button class="name_bookbutton">Author 2</button>
+    </div>
+    <div style="display: flex; gap: 8px;">
+      <p class="nami_bookpp">Published :  </p><button class="name_bookbutton">2019</button>
+    </div>
+    <div style="display: flex; gap: 8px;">
+      <p class="nami_bookpp">Publishers: </p><button class="name_bookbutton">Jamal Kasper</button>
+    </div>
+    <div style="display: flex; gap: 8px;">
+      <p class="nami_bookpp">Publishers: </p><button class="name_bookbutton">JComputers</button>
+    </div>
+      <div style="display: flex; gap: 8px;">
+      <p class="nami_bookpp">Pages Count: </p><button class="name_bookbutton">346</button>
+    </div>
+    </div>
+  </div>
+  </div>
+  <body>
+    <div class="pothtion">
+
+      <!-- nav qismi -->
+    <div class="border">
+      <div class="contaner">
+        <nav class="nav_box">
+          <img src="imgs/Group 193.svg" alt="" />
+          <form class="form" action="">
+            <img  class="loga_search" src="imgs/Group-2.png" alt="" />
+            <input
+              class="input_search"
+              type="search"
+              placeholder="search books"
+              name="."
+              id="."
+            />
+          </form>
+          <div class="logout">
+            <img src="imgs/Group.png" width="23" height="23" alt="" />
+           <a href="pages/logout.html"><button class="logout_button">Logout</button></a> 
+          </div>
+        </nav>
+      </div>
+    </div>
+
+<!-- month qismi -->
+
+    <div class="border">
+      <div class="contaner">
+        <div class="showing">
+          <div>
+          <p class="showing_text">Showing 18 Result(s)</p>
+        </div>
+          <form action="">
+            <input class="input_month" type="month" name="" id="" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- bookmarks box -->
+
+    <div style="background: #f8fafd; " >
+      <div class="contaner">
+        <div class="header">
+
+          <!-- bookmarks cart -->
+ 
+          <div class="bookmarks">
+            <h2 class="bokmarks_text">Bookmarks</h2>
+            <p class="bokmarks_text_p">
+              If you don’t like to read, you <br />
+              haven’t found the right book
+            </p>
+            <div class="book_shop">
+              <div>
+                <strong class="bookshoop_strong">Python</strong>
+                <p class="bookshop_p">David M. Beazley</p>
+              </div>
+              <img class="bookshop_open" src="imgs/book-open 1.png" alt="" />
+              <img class="bookshop_delete" src="imgs/delete 1.png" alt="" />
+            </div>
+            <a style="text-decoration: none;" href="pages/eddt.html">
+            <div class="new_cart">
+              <img width="150" height="150" src="https://icon-library.com/images/red-plus-icon/red-plus-icon-18.jpg" alt="">
+              <p style="font-size: 40px; color: red;" >new card</p>
+            </div>
+          </a>
+          </div>
+          <div class="book_box">
+
+            <!-- swiper -->
+
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- books carts -->
+
+            <div class="book_itim">
+
+              <template id="template">
+
+                <div class="book_cart">
+                  <div class="book_img">
+                    <img
+                      style="border-radius: 5px"
+                      class="avatar_img"
+                      width="201"
+                      height="202"
+                      src="imgs/Rectangle 356.png"
+                      alt=""
+                    />
+                  </div>
+                  <strong class="python_strong"></strong>
+                  <p class="python_p"></p>
+                  <p class="python_p2"></p>
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      margin-bottom: 5px;
+                    "
+                  >
+                    <button class="python_button">Bookmark</button>
+                    <button class="python_button2">More Info</button>
+                  </div>
+                  <button class="button_read">Read</button>
+                </div>
+              </template>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
